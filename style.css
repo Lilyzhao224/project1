@@ -1,0 +1,241 @@
+/* ==================== GENERAL ==================== */
+
+* {
+  box-sizing: border-box;
+}
+
+
+body {
+  margin: 0;
+
+  background-color: white;
+
+  color: #111111;
+
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+
+
+/* ==================== HOME PAGE ==================== */
+
+#homePage {
+  width: 100%;
+  height: 100vh;
+
+  display: grid;
+  place-items: center;
+}
+
+
+.home-content {
+  text-align: center;
+}
+
+
+h1 {
+  margin: 0 0 18px;
+
+  font-family: Georgia, "Times New Roman", serif;
+
+  font-size: 58px;
+
+  font-weight: normal;
+}
+
+
+.subtitle {
+  margin-bottom: 40px;
+
+  font-size: 14px;
+
+  color: #777777;
+}
+
+
+.birthday-inputs {
+  margin-bottom: 28px;
+}
+
+
+select {
+  padding: 11px 15px;
+
+  margin-left: 7px;
+  margin-right: 7px;
+
+  background-color: white;
+
+  border: 1px solid #bbbbbb;
+
+  font-size: 12px;
+}
+
+
+button {
+  padding: 13px 28px;
+
+  background-color: #111111;
+
+  color: white;
+
+  border: none;
+
+  font-size: 11px;
+
+  letter-spacing: 1px;
+
+  cursor: pointer;
+}
+
+
+button:hover {
+  background-color: #444444;
+}
+
+
+#message {
+  min-height: 20px;
+
+  margin-top: 20px;
+
+  font-size: 13px;
+
+  color: #777777;
+}
+
+
+
+/* ==================== RESULT PAGE ==================== */
+
+#resultPage {
+  display: none;
+
+  width: 100%;
+
+  min-height: 100vh;
+}
+
+
+.result-layout {
+  min-height: 100vh;
+
+  display: grid;
+
+  grid-template-columns: 1fr 1.3fr;
+
+  align-items: center;
+
+  gap: 80px;
+
+  padding-left: 9%;
+  padding-right: 9%;
+}
+
+
+
+/* LEFT SIDE */
+
+.result-text {
+  text-align: left;
+}
+
+
+#resultBirthday {
+  margin-bottom: 25px;
+
+  font-size: 12px;
+
+  letter-spacing: 2px;
+
+  color: #777777;
+}
+
+
+#artTitle {
+  margin-top: 0;
+
+  margin-bottom: 22px;
+
+  font-family: Georgia, "Times New Roman", serif;
+
+  font-size: 45px;
+
+  font-style: italic;
+
+  font-weight: normal;
+
+  line-height: 1.1;
+}
+
+
+#artArtist {
+  margin-bottom: 6px;
+
+  font-size: 16px;
+}
+
+
+#artYear {
+  margin-top: 0;
+
+  font-size: 14px;
+
+  color: #777777;
+}
+
+
+#tryAgainButton {
+  margin-top: 45px;
+}
+
+
+
+/* ==================== P5 ==================== */
+
+#canvasContainer {
+  display: grid;
+
+  place-items: center;
+}
+
+
+#canvasContainer canvas {
+  display: block;
+
+  max-width: 100%;
+
+  height: auto !important;
+}
+
+
+
+/* ==================== MOBILE ==================== */
+
+@media (max-width: 800px) {
+
+  h1 {
+    font-size: 42px;
+  }
+
+
+  .result-layout {
+    grid-template-columns: 1fr;
+
+    gap: 40px;
+
+    padding-top: 50px;
+    padding-bottom: 50px;
+  }
+
+
+  #canvasContainer {
+    order: 1;
+  }
+
+
+  .result-text {
+    order: 2;
+  }
+
+}
